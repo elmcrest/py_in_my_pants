@@ -1,0 +1,8 @@
+# Pants workspace files
+/.pants.*
+/dist/
+/.pids
+
+**/.ruff_cache
+**/__pycache__
+**/.pytest_cache

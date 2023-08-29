@@ -1,0 +1,17 @@
+[anonymous-telemetry]
+enabled = true
+repo_id = "42b04155-f073-463f-b524-b7901d3e4770"
+
+[GLOBAL]
+pants_version = "2.16.0"
+
+backend_packages = [
+    "pants.backend.python",
+    "pants.backend.python.lint.black",
+    "pants.backend.python.lint.isort",
+    "pants.backend.experimental.python.lint.ruff",
+]
+
+[python]
+interpreter_constraints = ["CPython==3.11.*"]
+enable_resolves = true
