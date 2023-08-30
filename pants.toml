@@ -4,6 +4,10 @@ repo_id = "42b04155-f073-463f-b524-b7901d3e4770"
 
 [GLOBAL]
 pants_version = "2.16.0"
+remote_cache_read = true
+remote_cache_write = true
+remote_store_address = "grpc://localhost:9092"
+remote_instance_name = "main"
 
 backend_packages = [
     "pants.backend.python",
@@ -15,3 +19,11 @@ backend_packages = [
 [python]
 interpreter_constraints = ["CPython==3.11.*"]
 enable_resolves = true
+# default_resolve = "app"
+
+# [python.resolves]
+# app = "3rdparty/python/default.lock"
+# pytest = "3rdparty/python/pytest.lock"
+
+# [pytest]
+# extra_requirements.add = ["httpx"]
